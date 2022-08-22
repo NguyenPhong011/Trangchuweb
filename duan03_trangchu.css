@@ -3,34 +3,16 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    -webkit-transition: all 0.05s linear;
     transition: all 0.05s linear;
 }
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 9rem;
-}
-
-html::-webkit-scrollbar {
-    width: 1rem;
-}
-
-html::-webkit-scrollbar-track {
-    background: #111;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: #29d9d5;
-    border-radius: 5rem;
 }
 
 body {
@@ -80,15 +62,9 @@ section {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(184, 115, 115, 0.7))), url(anhnen.jpg) repeat-x;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(anhnen.jpg) repeat-x;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 1.5rem 9%;
 }
@@ -112,7 +88,6 @@ section {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /*overflow: hidden;*/
     background-color: palegreen;
 }
 
@@ -193,9 +168,7 @@ section {
     background-size: cover;
     background-position: center;
     min-height: 60vh;
-    -webkit-box-align: center;
     align-items: center;
-    -ms-flex-pack: center;
     justify-content: center;
     padding-bottom: 5rem;
 }
@@ -208,7 +181,7 @@ section {
     font-weight: bolder;
     color: transparent;
     -webkit-text-stroke: 0.1rem #fff;
-    font-size: 4vw;
+    font-size: 5vw;
     display: block;
 }
 
@@ -231,7 +204,6 @@ section {
     margin-top: -5rem;
     background: rgb(34, 46, 46);
     border-radius: 2rem;
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
     box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
     padding: 3rem 2rem;
 }
@@ -240,10 +212,7 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
     align-items: flex-end;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
@@ -272,27 +241,18 @@ section {
 }
 
 .book-form form .btn {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 15rem;
     flex: 1 1 15rem;
 }
 
 .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 5rem;
 }
 
 .about .video-container {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 42rem;
     flex: 1 1 42rem;
 }
 
@@ -302,8 +262,6 @@ section {
 }
 
 .about .content {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 42rem;
     flex: 1 1 42rem;
     margin-bottom: 5rem;
 }
@@ -327,9 +285,7 @@ section {
 }
 
 .destination .box-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 1.5rem;
 }
@@ -341,7 +297,6 @@ section {
 }
 
 .destination .box-container .box:hover img {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -354,7 +309,6 @@ section {
 .destination .box-container .box .image img {
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -406,7 +360,6 @@ section {
     padding: 1rem;
     font-size: 5rem;
     color: #033635;
-    ;
 }
 
 .services .box-container .box h3 {
@@ -474,20 +427,13 @@ section {
 }
 
 .review {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
 .review .content {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 42rem;
     flex: 1 1 42rem;
 }
 
@@ -509,20 +455,13 @@ section {
 }
 
 .review .box-container {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 42rem;
     flex: 1 1 42rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
 .review .box-container .box {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 20rem;
     flex: 1 1 20rem;
     border-radius: 1rem;
     padding: 2rem;
@@ -542,11 +481,7 @@ section {
 }
 
 .review .box-container .box .user {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     gap: 1rem;
 }
@@ -615,7 +550,6 @@ section {
 }
 
 .banner {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(09.jpg) no-repeat;
     background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(09.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -646,7 +580,6 @@ section {
 .footer .box-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
 }
@@ -717,4 +650,59 @@ section {
 .footer .box-container .box .links i {
     padding-right: .5rem;
     color: black;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #222;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+    }
+    .home {
+        margin-top: 10rem;
+    }
+    .home .content span {
+        font-size: 8vw;
+    }
+    .home .content h3 {
+        font-size: 9vw;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .about .content h3 {
+        font-size: 3.5rem;
+    }
+    .banner .content h3 {
+        font-size: 2.7rem;
+    }
 }
